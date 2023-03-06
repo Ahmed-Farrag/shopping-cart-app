@@ -19,12 +19,35 @@
  * in package.json : 'sass':'gulp sass'
 
 
+* * estimation time : 
+   jira : sprint : 1 to 3 months - tasks to developers
+   meetings : 1.planning meeting = discripe to tasks and give point estimation depend:
+    spic/اخد وقت افكر في التاسك  - complicty  - time 
+   2.desgin meeting : give tasks to devs
+
+* * git: 
+1. push first commit in master
+2. create branch: 
+   >git chechout -b "header-comp"
+   >git branch
+
+   
+* * make css selectors : grid and flex
+** gulp to handle css files : take scss from components to src/css file
+**make header comp and make in it : header.js and header.scss
+** finish header comp - push it in branch:
+ *>git add .     >git commit -m ""    >git push origin header-comp
 
 
 
- */ 
 
 
+
+
+
+
+
+ */
 
 // in server:
 /**
