@@ -1,0 +1,11 @@
+$color: darkgreen;
+
+footer {
+    grid-area: footer;
+    background-color: $color;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

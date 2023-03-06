@@ -34,12 +34,16 @@
    
 * * make css selectors : grid and flex
 ** gulp to handle css files : take scss from components to src/css file
-**make header comp and make in it : header.js and header.scss
+** make header comp and make in it : header.js and header.scss
 ** finish header comp - push it in branch:
  *>git add .     >git commit -m ""    >git push origin header-comp
+*3.my sir make pull req to my on master and merge it in master
+*4.go to main and take new code: >git checkout master
+>git pull origin master
 
 
-
+5.لو عمل كود وانا في الماستر ونسيت اقد اكتب الكومند دة علشان كل اللي كتبتة يروح للبرنش الجديد
+>git checkout -b "footer-comp"
 
 
 
