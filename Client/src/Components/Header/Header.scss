@@ -1,9 +1,10 @@
-$color: darkgreen;
+$color: #2ea043;
+$textColor : #fff;
 
 header {
     grid-area: header;
     background-color: $color;
-    color: white;
+    color: $textColor;
     display: flex;
     justify-content: center;
     align-items: center;
