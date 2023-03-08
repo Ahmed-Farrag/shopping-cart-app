@@ -2,7 +2,7 @@
     {
         "id": "id1",
         "title": "Product 1",
-        "imageUrl": "/Client/public/images/Apple.jpg",
+        "imageUrl": "/images/Apple.jpg",
         "desc": "This is Product 1",
         "price": 300,
         "sizes": [
@@ -13,7 +13,7 @@
     {
         "id": "id2",
         "title": "Product 2",
-        "imageUrl": "/Client/public/images/airpod.png",
+        "imageUrl": "/images/airpod.png",
         "desc": "This is Product 2",
         "price": 300,
         "sizes": [
@@ -24,7 +24,7 @@
     {
         "id": "id3",
         "title": "Product 3",
-        "imageUrl": "/Client/public/images/Canon.png",
+        "imageUrl": "/images/Canon.png",
         "desc": "This is Product 3",
         "price": 300,
         "sizes": [
@@ -35,7 +35,7 @@
     {
         "id": "id4",
         "title": "Product 4",
-        "imageUrl": "/Client/public/images/keyboard.png",
+        "imageUrl": "/images/keyboard.png",
         "desc": "This is Product 4",
         "price": 40,
         "sizes": [

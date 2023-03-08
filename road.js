@@ -51,7 +51,10 @@
 * *create words.js : to put data of site and import it in header.js - more reusiple - and for malti lang
 * *create data.json : put data in file 
 
-
+** create products comp make for it layout
+* take product from json file to app by setState and 
+call data in data.json to product.js as a props <Products products={products} />
+and in products.js make maping in data and handel css
 
  */
 
