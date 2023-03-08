@@ -1,0 +1,29 @@
+$color: #2ea043;
+$textColor : #fff;
+
+.filter-wrapper {
+    background-color: $textColor;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    flex-direction: column;
+
+    .filter-title {
+        background-color: $color;
+        padding: 10px;
+        color: $textColor;
+        margin-bottom: 20px;
+    }
+
+    >div {
+        padding: 5px 20px;
+        margin-bottom: 15px;
+    }
+
+    select {
+        display: block;
+        height: 40px;
+        border: 1px solid #ddd;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
