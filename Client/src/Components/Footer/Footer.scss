@@ -1,9 +1,10 @@
-$color: darkgreen;
+$color: #464b47;
+$textColor : #fff;
 
 footer {
     grid-area: footer;
     background-color: $color;
-    color: white;
+    color: $textColor;
     display: flex;
     justify-content: center;
     align-items: center;
