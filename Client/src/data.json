@@ -6,8 +6,8 @@
         "desc": "This is Product 1",
         "price": 300,
         "sizes": [
-            "L",
-            "XS"
+            "S",
+            "M"
         ]
     },
     {
@@ -17,7 +17,7 @@
         "desc": "This is Product 2",
         "price": 300,
         "sizes": [
-            "XXL",
+            "XL",
             "L"
         ]
     },
@@ -28,8 +28,8 @@
         "desc": "This is Product 3",
         "price": 300,
         "sizes": [
-            "S",
-            "M"
+            "XXL",
+            "XS"
         ]
     },
     {

@@ -13,7 +13,7 @@ export default function Filter(props) {
           value={props.size}
           onChange={props.handleFilterBySize}
         >
-          <option value="All">All</option>
+          <option value="ALL">All</option>
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>

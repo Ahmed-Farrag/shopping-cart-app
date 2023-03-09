@@ -17,14 +17,15 @@ function App() {
   const handleFilterBySize = (e) => {
     setSize(e.target.value);
     // handle All
-    if (e.target.value == "ALL") {
+    if (e.target.value === "ALL") {
       setProducts(data);
     } else {
       // make filter in size
       let productsClone = [...products];
       let newProducts = productsClone.filter(
-        (p) => p.sizes.indexOf(e.target.value) != -1
+        (p) => p.sizes.indexOf(e.target.value) !== -1
       );
+      console.log("newProducts", newProducts);
       setProducts(newProducts);
     }
   };
@@ -34,9 +35,9 @@ function App() {
     setSort(order);
     let productsClone = [...products];
     let newProducts = productsClone.sort(function (a, b) {
-      if (order == "lowest") {
+      if (order === "lowest") {
         return a.price - b.price;
-      } else if (order == "highest") {
+      } else if (order === "highest") {
         return b.price - a.price;
       } else {
         return a.id < b.id ? 1 : -1;
