@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../css/Products/Products.css";
 import ProductModal from "./ProductModal";
+import Bounce from "react-reveal/Bounce";
 
 function Products(props) {
   // console.log("image");
@@ -13,21 +14,25 @@ function Products(props) {
     setProduct(false);
   };
   return (
-    <div className="products-wrapper">
-      {props.products.map((product) => (
-        <div className="product-item" key={product.id}>
-          <a href="#" onClick={() => openModal(product)}>
-            <img src={product.imageUrl} alt={product.title} />
-          </a>
-          <div className="product-title">
-            <p>{product.title}</p>
-            <span>${product.price}</span>
+    <Bounce clear cascade>
+      <div className="products-wrapper">
+        {props.products.map((product) => (
+          <div className="product-item" key={product.id}>
+            <a href="#" onClick={() => openModal(product)}>
+              <img src={product.imageUrl} alt={product.title} />
+            </a>
+            <div className="product-title">
+              <p>{product.title}</p>
+              <span>${product.price}</span>
+            </div>
+            <button onClick={() => props.addToCart(product)}>
+              Add To Cart
+            </button>
           </div>
-          <button onClick={() => props.addToCart(product)}>Add To Cart</button>
-        </div>
-      ))}
-      <ProductModal product={product} closeModel={closeModel} />
-    </div>
+        ))}
+        <ProductModal product={product} closeModel={closeModel} />
+      </div>
+    </Bounce>
   );
 }
 export default Products;

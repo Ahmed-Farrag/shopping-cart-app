@@ -49,3 +49,15 @@
   border-radius: 40%;
   padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .products-wrapper .product-item {
+    width: 24%;
+  }
+  .products-wrapper .product-title {
+    display: block;
+  }
+  .product-info img {
+    width: 100%;
+  }
+}
