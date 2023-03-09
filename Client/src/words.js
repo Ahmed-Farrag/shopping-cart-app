@@ -1,5 +1,5 @@
 export const words = {
-  headerTitle: "shopping cart",
-  footerTitle: " &euro; CopyWrite Ahmed Farrag 2023",
-  content: "content",
+  headerTitle: "Shopping Cart",
+  footerTitle: " CopyWrite Ahmed Farrag 2023",
+  content: "Content",
 };
