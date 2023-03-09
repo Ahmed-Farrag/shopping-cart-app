@@ -5,7 +5,7 @@ export default function ProductModal(props) {
   return (
     <Modal isOpen={product}>
       <span className="close-icon" onClick={closeModel}>
-        X
+        &times;
       </span>
       <div className="product-info">
         <img src={product.imageUrl} alt={product.title} />

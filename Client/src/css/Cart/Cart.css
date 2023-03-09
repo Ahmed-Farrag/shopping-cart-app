@@ -26,11 +26,23 @@
   align-items: center;
   flex: 1;
 }
-.cart-item button {
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.cart-footer .total1 {
+  font-size: 25px;
+}
+
+button {
   display: inline-block;
   border: 0;
   background: #2ea043;
   color: #fff;
   padding: 7px;
   border-radius: 6px;
+  cursor: pointer;
 }
