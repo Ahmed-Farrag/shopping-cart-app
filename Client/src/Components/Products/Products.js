@@ -3,7 +3,7 @@ import "../../css/Products/Products.css";
 import ProductModal from "./ProductModal";
 
 function Products(props) {
-  console.log("image");
+  // console.log("image");
   const [product, setProduct] = useState("");
 
   const openModal = (product) => {
