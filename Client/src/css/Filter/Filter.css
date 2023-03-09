@@ -21,3 +21,17 @@
   width: 100%;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
+  .wrapper .filter-wrapper {
+    width: 98%;
+    margin-top: 10px;
+  }
+  .wrapper .products-wrapper {
+    width: 100%;
+  }
+}

@@ -56,6 +56,70 @@
 call data in data.json to product.js as a props <Products products={products} />
 and in products.js make maping in data and handel css
 
+
+** create new comp;
+create new branch : >git checkout -b "product-details"
+install modal to show & exit product:
+> npm i react-modal   and import it and make functions
+
+
+* *Create filter comp:
+لو عملت الشغل ونسيت اعمل البرانش 
+>git checkout -b "filter-comp"
+
+* *Create filter comp logic:
+state for size and state for sort and make methods for it
+controle element : بعد متتحكم في كل المنت بعد مخلص كل فاليو ارجعله فاليو جديده
+=> to show in input 
+then take products and update it
+
+
+**create cart comp:
+handle html and sass then handle setState in app
+
+* ! all methods in app.js will remove and handle it in redux
+
+* ex to prosess of methods:
+** in app.js :
+const [cartItems, setCartItems] = useState([]);
+
+ const removeFromeCart = (product) => {
+    const cartItemsClone = [...cartItems];
+    setCartItems(cartItemsClone.filter((p) => p.id !== product.id));
+  };
+
+return (
+ <Cart removeFromeCart={removeFromeCart} />
+ );
+
+ ** in Cart.js:
+<button onClick={() => props.removeFromeCart(item)}>
+
+
+* todo: save cart in localstorge
+after adding and removing save it in localstorge
+by useEffect
+
+in cart.js : make function to sum total
+then: checkout form comp: 
+
+*#checkout-form
+required - type=''  - handle submit method
+change: methode to name and email => const [value, setValue]
+
+**  inupt comp
+
+
+*Headline: Animation
+react reveal npm
+>npm i react-reveal
+*!if i have error in npm : >npm config set legacy-peer-deps tru
+
+**handle mediaquery in sass
+
+
+
+
  */
 
 // in server:
