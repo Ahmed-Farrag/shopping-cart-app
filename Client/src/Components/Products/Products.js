@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../css/Products/Products.css";
 import ProductModal from "./ProductModal";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 function Products(props) {
   // console.log("image");
