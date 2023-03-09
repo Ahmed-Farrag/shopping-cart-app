@@ -14,25 +14,24 @@ function Products(props) {
     setProduct(false);
   };
   return (
-    <Bounce clear cascade>
-      <div className="products-wrapper">
-        {props.products.map((product) => (
-          <div className="product-item" key={product.id}>
-            <a href="#" onClick={() => openModal(product)}>
-              <img src={product.imageUrl} alt={product.title} />
-            </a>
-            <div className="product-title">
-              <p>{product.title}</p>
-              <span>${product.price}</span>
-            </div>
-            <button onClick={() => props.addToCart(product)}>
-              Add To Cart
-            </button>
+    <div className="products-wrapper">
+      {props.products.map((product) => (
+        <div className="product-item" key={product.id}>
+          <a href="#" onClick={() => openModal(product)}>
+            <img src={product.imageUrl} alt={product.title} />
+          </a>
+          <div className="product-title">
+            <p>{product.title}</p>
+            <span>${product.price}</span>
           </div>
-        ))}
-        <ProductModal product={product} closeModel={closeModel} />
-      </div>
-    </Bounce>
+          <button onClick={() => props.addToCart(product)}>Add To Cart</button>
+        </div>
+      ))}
+      <ProductModal product={product} closeModel={closeModel} />
+    </div>
   );
 }
 export default Products;
+
+// "react-reveal": "^1.2.2",
+// <Bounce clear cascade></Bounce>
