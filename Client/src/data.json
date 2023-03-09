@@ -15,7 +15,7 @@
         "title": "Product 2",
         "imageUrl": "/images/airpod.png",
         "desc": "This is Product 2",
-        "price": 300,
+        "price": 900,
         "sizes": [
             "XL",
             "L"
@@ -26,7 +26,7 @@
         "title": "Product 3",
         "imageUrl": "/images/Canon.png",
         "desc": "This is Product 3",
-        "price": 300,
+        "price": 100,
         "sizes": [
             "XXL",
             "XS"

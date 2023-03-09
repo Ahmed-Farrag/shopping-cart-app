@@ -23,6 +23,7 @@ main {
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper .products-wrapper {
