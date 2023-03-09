@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/Filter/Filter.css";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 export default function Filter(props) {
   return (
