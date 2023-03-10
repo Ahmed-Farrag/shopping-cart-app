@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../../css/Cart/Cart.css";
 import Checkout from "../CheckoutForm/Checkout";
-// import Products from "../Products/Products";
+
+import Fade from "react-reveal/Fade";
 
 export default function Cart(props) {
   const [showForm, setShowForm] = useState(false);
@@ -35,23 +36,25 @@ export default function Cart(props) {
           <p>There is {props.cartItems.length} Products on cart</p>
         )}
       </div>
-      <div className="cart-items">
-        {props.cartItems.map((item) => (
-          <div className="cart-item" key={item.id}>
-            <img src={item.imageUrl} alt="" />
-            <div className="cart-info">
-              <div>
-                <p>Title: {item.title}</p>
-                <p>Qty: {item.qty}</p>
-                <p>Price: ${item.price}</p>
+      <Fade bottom cascade>
+        <div className="cart-items">
+          {props.cartItems.map((item) => (
+            <div className="cart-item" key={item.id}>
+              <img src={item.imageUrl} alt="" />
+              <div className="cart-info">
+                <div>
+                  <p>Title: {item.title}</p>
+                  <p>Qty: {item.qty}</p>
+                  <p>Price: ${item.price}</p>
+                </div>
+                <button onClick={() => props.removeFromeCart(item)}>
+                  Remove
+                </button>
               </div>
-              <button onClick={() => props.removeFromeCart(item)}>
-                Remove
-              </button>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Fade>
       {props.cartItems.length !== 0 && (
         <div className="cart-footer">
           <div className="total1">
