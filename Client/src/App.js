@@ -10,6 +10,9 @@ import Products from "./Components/Products/Products";
 import Filter from "./Components/Filter/Filter";
 import Cart from "./Components/Cart/Cart";
 
+import { Provider } from "react-redux";
+import store from "./Store/Store";
+
 function App() {
   const [products, setProducts] = useState(data);
   const [sort, setSort] = useState("");
@@ -76,23 +79,25 @@ function App() {
   };
 
   return (
-    <div className="layout">
-      <Header />
-      <main>
-        <div className="wrapper">
-          <Products products={products} addToCart={addToCart} />
-          <Filter
-            producsNumber={products.length}
-            size={size}
-            sort={sort}
-            handleFilterByOrder={handleFilterByOrder}
-            handleFilterBySize={handleFilterBySize}
-          />
-        </div>
-        <Cart cartItems={cartItems} removeFromeCart={removeFromeCart} />
-      </main>
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className="layout">
+        <Header />
+        <main>
+          <div className="wrapper">
+            <Products products={products} addToCart={addToCart} />
+            <Filter
+              producsNumber={products.length}
+              size={size}
+              sort={sort}
+              handleFilterByOrder={handleFilterByOrder}
+              handleFilterBySize={handleFilterBySize}
+            />
+          </div>
+          <Cart cartItems={cartItems} removeFromeCart={removeFromeCart} />
+        </main>
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 
