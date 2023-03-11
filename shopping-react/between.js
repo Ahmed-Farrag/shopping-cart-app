@@ -8,6 +8,10 @@ state file have all data and any comp need this data can access it
 
 
 1.create store
+create branch : >git checkout -b "store-branch"
+in store folder: create store.js: 
+>npm i redux react-redux redux-thunk
+
 
 
 

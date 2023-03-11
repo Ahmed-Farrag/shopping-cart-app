@@ -25,11 +25,16 @@
     spic/اخد وقت افكر في التاسك  - complicty  - time 
    2.desgin meeting : give tasks to devs
 
-* * git: 
+* $ git: 
 1. push first commit in master
 2. create branch: 
    >git chechout -b "header-comp"
    >git branch
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
 
    
 * * make css selectors : grid and flex
